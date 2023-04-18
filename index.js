@@ -25,7 +25,7 @@ io.on("connection", (socket) => {
   })
 });
 app.get('/', async(req, res) => {
-  res.sendFile('index.html', { root: path.join(__dirname, '../front') });
+  res.sendFile('index.html', { root: path.join(__dirname, './') });
 })
 server.listen(PORT, () => {
   console.log('Server is working......');
