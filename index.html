@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://localhost:4000/socket.io/socket.io.js"></script>
+    <script src="https://socket-g8zp.vercel.app:4000/socket.io/socket.io.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         .container {
@@ -78,8 +78,8 @@ align-items: center;
 
     <script>
         //prod
-        const socket = io('http://localhost:4000');
         const Name = prompt('enter your name');
+        const socket = io('https://socket-g8zp.vercel.app:4000');
         const aud = new Audio('https://res.cloudinary.com/djat12jm7/video/upload/v1681829914/ping_ktqhx2.mp3');
         const messages = document.getElementById('messageInput');
         const messageContainer = document.querySelector('.messages');
