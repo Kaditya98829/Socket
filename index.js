@@ -3,7 +3,7 @@ const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const users = {};
 
-const PORT = process.env.PORT;
+const PORT = 4000 || process.env.PORT;
 
 io.on("connection", (socket) => {
   socket.on('new-user-joined', name => {
@@ -24,8 +24,7 @@ io.on("connection", (socket) => {
   })
 });
 
-server.
-server.listen(4000, () => {
+server.listen(PORT, () => {
   console.log('Server is working......');
 })
 
