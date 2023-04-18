@@ -1,7 +1,6 @@
 const app = require('express')();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
-const path = require('path');
 const users = {};
 
 const PORT = 4000 || process.env.PORT;
@@ -25,7 +24,7 @@ io.on("connection", (socket) => {
   })
 });
 app.get('/', async(req, res) => {
-  res.sendFile(path.join(__dirname, '/index.html'));
+  res.send('<h1>Hi its working </h1>')
 })
 server.listen(PORT, () => {
   console.log('Server is working......');
