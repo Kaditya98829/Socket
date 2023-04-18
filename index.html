@@ -79,7 +79,7 @@ align-items: center;
     <script>
         //prod
         const Name = prompt('enter your name');
-        const socket = io('https://socket-g8zp.vercel.app');
+        const socket = io();
         const aud = new Audio('https://res.cloudinary.com/djat12jm7/video/upload/v1681829914/ping_ktqhx2.mp3');
         const messages = document.getElementById('messageInput');
         const messageContainer = document.querySelector('.messages');
