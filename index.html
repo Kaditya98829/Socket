@@ -75,9 +75,11 @@ align-items: center;
         </form>
        </div>
     </div>
-
-    <script>
+    <script >
+    </script>
+    <script type="module">
         //prod
+        import { io } from "https://cdn.socket.io/4.3.2/socket.io.esm.min.js";
         const Name = prompt('enter your name');
         const socket = io();
         const aud = new Audio('https://res.cloudinary.com/djat12jm7/video/upload/v1681829914/ping_ktqhx2.mp3');
