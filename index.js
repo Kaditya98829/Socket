@@ -23,10 +23,9 @@ io.on("connection", (socket) => {
     delete users[socket.id];
   })
 });
-app.get('/', async(req, res) => {
-  res.send('Working')
-})
-server.listen(PORT||4000, () => {
+
+server.
+server.listen(4000, () => {
   console.log('Server is working......');
 })
 
