@@ -24,9 +24,9 @@ io.on("connection", (socket) => {
   })
 });
 app.get('/', async(req, res) => {
-  res.send('<h1>Hi its working </h1>')
+  res.send('Working')
 })
-server.listen(PORT, () => {
+server.listen(PORT||4000, () => {
   console.log('Server is working......');
 })
 
